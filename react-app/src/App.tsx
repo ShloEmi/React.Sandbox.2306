@@ -9,7 +9,7 @@ function App() {
         items={items}
         heading={'List Items'}
         onSelectedItem={s => {
-          s;
+          console.info(s);
         }}
       />
     </div>

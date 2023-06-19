@@ -26,6 +26,7 @@ function ListGroup(props: Props) {
             onClick={() => {
               console.log('[' + index + ']' + item + ' Clicked' + ', event: ');
               setSelectedIndex(index);
+              props.onSelectedItem(item);
             }}
           >
             {item}
